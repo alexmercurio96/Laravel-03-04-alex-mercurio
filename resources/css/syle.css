@@ -1,0 +1,17 @@
+body{
+    background-color: cadetblue;
+}
+
+.img-custom{
+    
+    height: 300px;
+    object-fit:cover;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.h1-custom{
+   color: darkgreen;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

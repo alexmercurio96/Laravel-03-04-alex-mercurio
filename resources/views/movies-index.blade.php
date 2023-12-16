@@ -1,25 +1,29 @@
 <x-layout>
 
-   
+  <x-header
+  title="I nostri Film"
+  paragrafo="Questi sono i film che babi ha a disposizione per te"
+  background="bg-secondary rounded-3 "
+  testo="homepage"
+  
+ ></x-header>
 
     {{-- CARD FILM --}}
 
  <div class="container d-flex justify-content-center align-items-center">
     <div class="row mt-5">
 
-      @foreach ($movies as $movie)
-          <div class="col-12 col-md-4">
-            <div class="card mt-5 d-flex" style="width: 18rem;">
-                <img src="{{$movie['img']}}" class="card-img-top" alt="{{$movie['title']}}">
-                <div class="card-body">
-                  <h5 class="card-title">{{$movie['title']}}</h5>
-                  <p class="card-text">La trama: {{$movie['plot']}}</p>
-                  <a href="#" class="btn btn-primary">vai al film</a>
-                </div>
-              </div>
-          </div>
+       @foreach($movies as $movie)
 
-      @endforeach
+          <x-card 
+          movieTitle="{{$movie['title']}}"
+          movieImg="{{$movie['img']}}"
+          moviePlot="{{$movie['plot']}}"
+          movieId="{{$movie['id']}}"
+          testo2="vai al film"
+          ></x-card>
+
+       @endforeach
 
     </div>
  </div>
