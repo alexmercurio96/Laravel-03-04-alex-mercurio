@@ -20,7 +20,7 @@
 
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-12 col-md-5">
+            <div class="col-12 col-md-6">
                 <form action="{{route('contact_us_submit')}}" method="POST" class="shadow rounded-4 p-4 bg-secondary text-white" > 
                     @csrf
                     <div class="mb-3">
